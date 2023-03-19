@@ -1,6 +1,8 @@
 # DiscordRAT
 WARNING: THIS IS ONLY THE SERVER VERSION AND IT CANNOT BE USED ALONE, YOU NEED ROSE GRABBER
 
+[![Run on Repl.it](https://replit.com/badge/github/DamagingRose/Rose-RAT)](https://replit.com/new/github/DamagingRose/Rose-RAT)
+
 A Discord RAT implemented for Rose Grabber | Made for educational purposes
 Not released for now, instructions will be posted later
 
