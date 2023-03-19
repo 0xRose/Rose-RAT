@@ -19,7 +19,7 @@
     <strong>by <a href="https://github.com/ICExFS">pierro</a>, <a href="https://github.com/Gumbobrot">Gumbobrot</a>, <a href="https://github.com/suvan1911">suvan</a>, <a href="https://github.com/suegdu">suegdu</a></strong>
 </div>
 
-### An Advanced RAT using SocketIO
+### WARNING: THIS PROJECT NEEDS ROSE INJECTOR WHICH ISN'T ACTUALLY RELEASED | THIS CANNOT BE USED FOR NOW
 
 ## <a id="content"></a>🌐 〢 Table Of Contents
 
@@ -89,9 +89,14 @@ Once a victim's client receives a command, it executes it and send a WebHook of 
 
 ## <a id="preview"></a> 📷 〢 Preview
 
+When a victim's client connects:
 ![ConnectingEvents](readme/events.png)
+
+The attacker's client UI:
 ![AttackerClient](readme/attacker_client.png)
-![Locations](readme/locationss.png)
+
+An exemple of using the `shell dir` command:
+![Exemple_command](readme/exemple_command.png)
 
 ## <a id="changelog"></a> 📚 〢 Changelog 
 
