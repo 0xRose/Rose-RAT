@@ -1,3 +1,10 @@
+<h1 align="center">
+  <br>
+  <a href="https://github.com/DamagingRose/Rose-Injector"><img src="https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/readme/Rose0.jpg" width=400 weigth=500 alt="R"></a>
+  <br>
+ Rose
+  <br>
+</h1>
 <div align="center">
     <img src="https://img.shields.io/github/languages/top/DamagingRose/Rose-RAT?color=%23000000">
     <img src="https://img.shields.io/github/stars/DamagingRose/Rose-RAT?color=%23000000&logoColor=%23000000">
