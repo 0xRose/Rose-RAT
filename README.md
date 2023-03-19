@@ -96,6 +96,8 @@ Once a victim's client receives a command, it executes it and send a WebHook of 
 
 ## <a id="preview"></a> 📷 〢 Preview
 
+When a victim's client connects:
+
 ![ConnectingEvents](readme/events.png)
 
 The attacker's client UI:
