@@ -11,9 +11,11 @@ import json
 
 __version__ = "1.0"
 
-with open("config.json", "r") as f:
-    config = json.load(f)
-    server_url = config["server_url"]
+#with open("config.json", "r") as f:
+#    config = json.load(f)
+#    server_url = config["server_url"]
+    
+server_url = Write.Input("    .$ Your server URL ? ", Colors.red_to_white, interval=0.025)
 
 os.system('cls')
 ctypes.windll.kernel32.SetConsoleTitleW("Rose Client | v" + __version__)
