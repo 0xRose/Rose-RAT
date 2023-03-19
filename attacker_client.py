@@ -74,7 +74,7 @@ class Serv():
             self.sio.emit("number_connected")
             cmd = Write.Input("\n    .$ ", Colors.red_to_white, interval=0.025)
             if cmd == "help":
-                webbrowser.open("https://github.com/DamagingRose/Rose-Injector/tree/main/source/socketioserv")
+                webbrowser.open("https://github.com/DamagingRose/Rose-RAT")
                 self.home(self._connected.get())
                 
             elif cmd == "exit":
