@@ -103,4 +103,4 @@ pattern = "**/*.py"
 start = "pylsp"
 
 [deployment]
-run = ["sh", "-c", "python3 ftest.py"]
+run = ["sh", "-c", "python3 main.py"]
