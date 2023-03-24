@@ -174,16 +174,6 @@ def _github():
                 
 
 ui.colors(primary='#333')
-
-@ui.page('/loading') 
-def loading_screen():
-    container = ui.row().classes('w-full h-full')
-    with container:
-        ui.image('https://raw.githubusercontent.com/DamagingRose/Rose-RAT/main/roseui/RoseLoadingScreen.gif').style(
-        'position: absolute; left: 50%; transform: translate(-50%); width: 100%; height: 100%;'
-    )
-    time.sleep(2)
-    ui.link('Back to main page', '/home')
     
 @ui.page('/home')
 def superhome():
@@ -207,9 +197,9 @@ def superhome():
         with ui.tab_panel('Socials'):
             _github()
 
-v = ui.video('https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4')
-v.on('ended', lambda _: ui.notify('Video playback completed'))
-
+v = ui.video('https://github.com/DamagingRose/Rose-RAT/raw/main/assets/RoseLoadingScreen.mp4', autoplay=True, loop=False, muted=True, controls=False).style('position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;')
+v.on('ended', lambda _: ui.open('/home'))
+    
 def start_nicegui(**kwargs):
     ui.run(
         title=__title__,
