@@ -2,12 +2,14 @@ import psocials
 
 from flaskwebgui import FlaskUI
 from nicegui import ui
-from dhooks import Webhook
-wbh = Webhook('https://canary.discord.com/api/webhooks/1087754058875539518/FKFV7WxcnvIJDjnRhuXbOHDJIb9NC0nEMWFcfjXbXEp3qbtjW0ACJtJQEWZjk7WVCLyr')
+import requests
 
 __title__ = 'RoseUI'
 __avatar__ = 'https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/readme/RoseWBG.png'
 __version__ = '1.0'
+
+__devmsg__ = requests.get("https://raw.githubusercontent.com/DamagingRose/Rose-RAT/main/roseui/msg.txt").text
+print(__devmsg__)
 
 xstartup = False 
 xinjections = False
