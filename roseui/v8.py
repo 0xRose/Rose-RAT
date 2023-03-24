@@ -8,8 +8,7 @@ __title__ = 'RoseUI'
 __avatar__ = 'https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/readme/RoseWBG.png'
 __version__ = '1.0'
 
-__devmsg__ = requests.get("https://raw.githubusercontent.com/DamagingRose/Rose-RAT/main/roseui/msg.txt").text
-print(__devmsg__)
+__devmsg__ = requests.get("https://raw.githubusercontent.com/DamagingRose/Rose-RAT/main/roseui/msg.txt").text.splitlines()[0].split(" - ")
 
 xstartup = False 
 xinjections = False
@@ -152,7 +151,7 @@ def _functions():
 def _github():
     with ui.card():
         with ui.column():
-            ui.markdown("<code>Message from developer: `AYOOOO`</code>")
+            ui.markdown(f"<code>Message from {__devmsg__[0]}: {__devmsg__[1]}</code>")
             with ui.row():
                 with ui.card_section():
                     ui.label("xpierroz").classes("text-h6")
