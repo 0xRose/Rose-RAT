@@ -3,6 +3,7 @@ import psocials
 from flaskwebgui import FlaskUI
 from nicegui import ui
 import requests
+import time
 
 __title__ = 'RoseUI'
 __avatar__ = 'https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/readme/RoseWBG.png'
@@ -106,18 +107,6 @@ def change_pings():
         return
     ui.notify("Ping has been disabled!", timeout=30, progress=True, avatar=__avatar__, color="yellow-7", position="top-right")
     
-ui.colors(primary='#333')
-ui.image('https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/readme/RoseWBG.png').style(
-    'position: absolute; top: 3px; left: 575px; width: 90px;'
-    )
-    
-    
-with ui.tabs().classes('w-full center') as tabs:
-    ui.tab('Home', icon='home')
-    ui.tab('Functions', icon='fingerprint')
-    with ui.tab('Socials', icon='face'):
-        ui.badge('0', color='red').props('floating')
-    
 def _home():
     ui.button('Build')
 
@@ -184,14 +173,42 @@ def _github():
                 ui.button("Discord", on_click=psocials.open_rose_discord)
                 
 
+ui.colors(primary='#333')
+
+@ui.page('/loading') 
+def loading_screen():
+    container = ui.row().classes('w-full h-full')
+    with container:
+        ui.image('https://raw.githubusercontent.com/DamagingRose/Rose-RAT/main/roseui/RoseLoadingScreen.gif').style(
+        'position: absolute; left: 50%; transform: translate(-50%); width: 100%; height: 100%;'
+    )
+    time.sleep(2)
+    ui.link('Back to main page', '/home')
     
-with ui.tab_panels(tabs, value='Home').classes('bg-transparent').classes('w-full center'):
-    with ui.tab_panel('Home'):
-        _home()
-    with ui.tab_panel('Functions'):
-        _functions()
-    with ui.tab_panel('Socials'):
-        _github()
+@ui.page('/home')
+def superhome():
+    ui.image('https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/readme/RoseWBG.png').style(
+        'position: absolute; top: 3px; left: 575px; width: 90px;'
+        )
+    
+        
+        
+    with ui.tabs().classes('w-full center') as tabs:
+        ui.tab('Home', icon='home')
+        ui.tab('Functions', icon='fingerprint')
+        with ui.tab('Socials', icon='face'):
+            ui.badge('0', color='red').props('floating')
+            
+    with ui.tab_panels(tabs, value='Home').classes('bg-transparent').classes('w-full center'):
+        with ui.tab_panel('Home'):
+            _home()
+        with ui.tab_panel('Functions'):
+            _functions()
+        with ui.tab_panel('Socials'):
+            _github()
+
+v = ui.video('https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4')
+v.on('ended', lambda _: ui.notify('Video playback completed'))
 
 def start_nicegui(**kwargs):
     ui.run(
