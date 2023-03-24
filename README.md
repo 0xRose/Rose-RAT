@@ -25,9 +25,6 @@
     </h1>
     <strong>by <a href="https://github.com/ICExFS">pierro</a>, <a href="https://github.com/Gumbobrot">Gumbobrot</a>, <a href="https://github.com/suvan1911">suvan</a>, <a href="https://github.com/suegdu">suegdu</a></strong>
 </div>
-
-### WARNING: THIS PROJECT NEEDS ROSE INJECTOR WHICH ISN'T ACTUALLY RELEASED | THIS CANNOT BE USED FOR NOW
-
 ## <a id="content"></a>🌐 〢 Table Of Contents
 
 - **[📖 〢 Description](#description)**
@@ -45,7 +42,7 @@
 ## <a id="description"></a> 📖 〢 Description
 
 This is the server-side of Rose RAT. It will create a SocketIO Server to communicate between the victim's client & the attacker client.
-This can be hosted on [repl.it](https://replit.com/account) or any other server
+This can be hosted on [repl.it](https://replit.com/account) or any other server. This is still under development and way more commands will be released soon.
 
 # How is it working?
 
