@@ -25,7 +25,8 @@
     </h1>
     <strong>by <a href="https://github.com/ICExFS">pierro</a>, <a href="https://github.com/Gumbobrot">Gumbobrot</a>, <a href="https://github.com/suvan1911">suvan</a>, <a href="https://github.com/suegdu">suegdu</a></strong>
 </div>
-## <a id="content"></a>🌐 〢 Table Of Contents
+
+## <a id="content"></a> 🌐 〢 Table Of Contents
 
 - **[📖 〢 Description](#description)**
 - **[🔰 〢 Features](#features)**
@@ -101,7 +102,7 @@ When a victim's client connects:
 The attacker's client UI:
 ![AttackerClient](readme/attacker_client.png)
 
-An exemple of using the `shell dir` command:
+An example of using the `shell dir` command:
 ![Exemple_command](readme/exemple_command.png)
 
 ## <a id="changelog"></a> 📚 〢 Changelog 
