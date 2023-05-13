@@ -61,6 +61,7 @@ Once a victim's client receives a command, it executes it and send a WebHook of 
 
 ## <a id="features"></a> 🔰 〢 Features
 
+- `See the victim's pc screen on live (screenshare)`🟢
 - `Make a Screenshot and send it (screenshot)`🟢
 - `Make a MessageBox with any text (messagebox <text>)`🟢
 - `Executing shell command (shell <text>)`🟢
