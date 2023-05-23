@@ -1,10 +1,10 @@
 from pystyle import Colors, Colorate, Center, Box, Write
 
-import os 
+import os
 import ctypes
 import time 
 
-import socketio 
+import socketio
 import webbrowser
 
 import json
@@ -16,11 +16,11 @@ __version__ = "1.0"
 #with open("config.json", "r") as f:
 #    config = json.load(f)
 #    server_url = config["server_url"]
-    
+
 server_url = Write.Input("    .$ Your server URL ? ", Colors.red_to_white, interval=0.025)
 
 os.system('cls')
-ctypes.windll.kernel32.SetConsoleTitleW("Rose Client | v" + __version__)
+ctypes.windll.kernel32.SetConsoleTitleW(f"Rose Client | v{__version__}")
 banner = """
 OooOOo.
 o     `o
@@ -209,10 +209,7 @@ class Command():
             command = command.split(' ')[0]
         except Exception:
             pass
-        for j in self.valid:
-            if command == j:
-                return True 
-        return False
+        return any(command == j for j in self.valid)
         
         
 ss = Serv(server_url)
