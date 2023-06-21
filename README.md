@@ -30,7 +30,7 @@
 
 - **[📖 〢 Description](#description)**
 - **[🔰 〢 Features](#features)**
-- **[🔗 〢 Discord](https://discord.gg/CJpFKwSdyW)**
+- **[🔗 〢 Discord](https://discord.gg/gz5fUCkw8p)**
 - **[📥 〢 Install](#install)**
   - **[💻 〢 Prerequisites](#prerequisites)**
   - **[⚙ 〢 Setup](#setup)**
@@ -119,7 +119,7 @@ All Notable Changes will be noted soon
 ## <a id="bugsorerrors"></a> ⚠️ Bugs Or Errors?
 
 -   To Report An Error Make An **[Issue](https://github.com/DamagingRose/Rose-RAT/issues)**
--   Or Join The **[Discord](https://discord.gg/CJpFKwSdyW)**
+-   Or Join The **[Discord](https://discord.gg/gz5fUCkw8p)**
 
 ## 🧾 <a id="lisence"></a> License
 
