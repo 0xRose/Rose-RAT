@@ -119,7 +119,7 @@ All Notable Changes will be noted soon
 ## <a id="bugsorerrors"></a> ⚠️ Bugs Or Errors?
 
 -   To Report An Error Make An **[Issue](https://github.com/DamagingRose/Rose-RAT/issues)**
--   Or Join The **[Discord](https://discord.gg/gz5fUCkw8p)**
+-   Or Join The **[Discord](https://discord.gg/rHdqqqYVzY)**
 
 ## 🧾 <a id="lisence"></a> License
 
