@@ -1,10 +1,6 @@
-<div align="center">
-  <h1>PROJECT DISCONTINUED!!!</h1>
-</div>
-
 <h1 align="center">
   <br>
-  <a href="https://github.com/DamagingRose/Rose-Injector"><img src="https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/readme/Rose.jpeg" width=400 weigth=500 alt="R"></a>
+  <a href="https://github.com/DamagingRose/Rose-Injector"><img src="https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/components/readme/Rose.jpeg" width=400 weigth=500 alt="R"></a>
   <br>
  Rose
   <br>
@@ -20,6 +16,13 @@
     <img src="https://img.shields.io/github/issues-closed/DamagingRose/Rose-RAT?color=%23000000&logoColor=%23000000">
     <br>
 </div>
+
+<div align="center">
+  <h1>PROJECT DISCONTINUED!!!</h1>
+  <h2>However, if you have discovered an error, it is still possible for me to correct it or to help you. ↓↓↓</h2>
+  <a href="https://discord.com/users/1121156877561122918"><img src="https://lanyard-profile-readme.vercel.app/api/1121156877561122918?theme=dark&bg=808080&animated=true&hideDiscrim=true&borderRadius=30px&idleMessage=Probably%20doing%20something%20else..." width=45%></a>
+</div>
+
 <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
 <div align="center">
