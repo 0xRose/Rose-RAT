@@ -1,3 +1,5 @@
+# PROJECT DISCONTINUED
+
 <h1 align="center">
   <br>
   <a href="https://github.com/DamagingRose/Rose-Injector"><img src="https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/readme/Rose.jpeg" width=400 weigth=500 alt="R"></a>
@@ -119,7 +121,7 @@ All Notable Changes will be noted soon
 ## <a id="bugsorerrors"></a> ⚠️ Bugs Or Errors?
 
 -   To Report An Error Make An **[Issue](https://github.com/DamagingRose/Rose-RAT/issues)**
--   Or Join The **[Discord](https://discord.gg/rHdqqqYVzY)**
+-   Or Join The **[Discord](https://discord.gg/)**
 
 ## 🧾 <a id="lisence"></a> License
 
