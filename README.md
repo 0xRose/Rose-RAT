@@ -21,8 +21,6 @@
 
 <div align="center">
   <h1>PROJECT DISCONTINUED!!!</h1>
-  <h2>However, if you have discovered an error, it is still possible for me to correct it or to help you. ↓↓↓</h2>
-  <a href="https://discord.com/users/1121156877561122918"><img src="https://lanyard-profile-readme.vercel.app/api/1121156877561122918?theme=dark&bg=808080&animated=true&hideDiscrim=true&borderRadius=30px&idleMessage=Probably%20doing%20something%20else..." width=45%></a>
 </div>
 
 <div align="center">
