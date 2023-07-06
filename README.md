@@ -20,9 +20,8 @@
 <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
 <div align="center">
-    <br>
-    <h1>PROJECT DISCONTINUED!!!</h1>
     <h1>
+        PROJECT DISCONTINUED!!!
         A Discord RAT Extension for Rose 💀
     </h1>
     <strong>by <a href="https://github.com/ICExFS">pierro</a>, <a href="https://github.com/Gumbobrot">Gumbobrot</a>, <a href="https://github.com/suvan1911">suvan</a>, <a href="https://github.com/suegdu">suegdu</a></strong>
