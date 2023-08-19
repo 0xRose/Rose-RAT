@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/DamagingRose/Rose-Injector"><img src="https://raw.githubusercontent.com/DamagingRose/Rose-Injector/main/components/readme/rose--.png" width=400 weigth=500 alt="R"></a>
+  <a href="https://github.com/DamagingRose/Rose-Grabber"><img src="https://raw.githubusercontent.com/DamagingRose/Rose-Grabber/main/components/readme/rose--.png" width=400 weigth=500 alt="R"></a>
   <br>
  Rose
   <br>
@@ -47,7 +47,7 @@ This can be hosted on [repl.it](https://replit.com/account) or any other server.
 
 # How is it working?
 
-When a grabber created with [Rose](https://github.com/DamagingRose/Rose-Injector) (with the RAT enabled) is opened, it'll try to connect to a SocketIO Server.
+When a grabber created with [Rose](https://github.com/DamagingRose/Rose-Grabber) (with the RAT enabled) is opened, it'll try to connect to a SocketIO Server.
 The server will create a `SID` for the victim's client (which is a temporary ID) that is going to be deleted once the victim's client is shutdown.
 The server will then send a WebHook that a victim has connected with his `IP` and his `SID` ([Preview](#preview))
 Then, it'll wait for the Server command and execute it in the background. 
@@ -89,7 +89,7 @@ Once a victim's client receives a command, it executes it and send a WebHook of 
 * Enter `pip install -r requirements.txt`
 * Click on the `Run` green button at the top of the page 
 * Copy the URL
-* Build a victim's client with [Rose-Injector](https://github.com/DamagingRose/Rose-Injector) using the URL you just copied
+* Build a victim's client with [Rose-Grabber](https://github.com/DamagingRose/Rose-Grabber) using the URL you just copied
 * Start `attacker_client.py` then paste the server URL
 * Whenever a victim starts the grabber, a WebHook will be sent to inform you,
 * You're now ready to execute commands.
