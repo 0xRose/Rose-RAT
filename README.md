@@ -23,7 +23,7 @@
     <h1>
         A Discord RAT Extension for Rose 💀
     </h1>
-    <strong>by <a href="https://github.com/ICExFS">pierro</a>, <a href="https://github.com/Gumbobrot">Gumbobrot</a>, <a href="https://github.com/suvan1911">suvan</a>, <a href="https://github.com/suegdu">suegdu</a></strong>
+    <strong>by <a href="https://github.com/ICExFS">pierro</a>, <a href="https://github.com/gumbobr0t">gumbobr0t</a>, <a href="https://github.com/suvan1911">suvan</a>, <a href="https://github.com/suegdu">suegdu</a></strong>
 </div>
 
 ## <a id="content"></a> 🌐 〢 Table Of Contents
