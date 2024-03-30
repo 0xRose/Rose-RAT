@@ -1,21 +1,21 @@
-### 🐍 PROJECT ENTIRELY DISCONTINUED NOW! NEW VERSION OF ROSE MALWARE: https://github.com/0xrose/Rose-Stealer
+### 🐍 PROJECT ENTIRELY DISCONTINUED NOW! YOU CAN FIND THE NEW VERSION OF ROSE MALWARE [HERE](https://github.com/0xrose/Rose-Stealer)
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/DamagingRose/Rose-Grabber"><img src="https://raw.githubusercontent.com/DamagingRose/Rose-Grabber/main/components/readme/%24rose-br.png" width=400 weigth=500 alt="R"></a>
+  <a href="https://github.com/0xrose/Rose-Stealer_old"><img src="https://raw.githubusercontent.com/0xrose/Rose-Stealer_old/main/resources/assets/rose.png" width=170 weigth=170></a>
   <br>
  Rose
   <br>
 </h1>
 <div align="center">
-    <img src="https://img.shields.io/github/languages/top/DamagingRose/Rose-RAT?color=%23000000">
-    <img src="https://img.shields.io/github/stars/DamagingRose/Rose-RAT?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/languages/top/0xrose/Rose-RAT?color=%23000000">
+    <img src="https://img.shields.io/github/stars/0xrose/Rose-RAT?color=%23000000&logoColor=%23000000">
     <br>
-    <img src="https://img.shields.io/github/commit-activity/w/DamagingRose/Rose-RAT?color=%23000000"> 
-    <img src="https://img.shields.io/github/last-commit/DamagingRose/Rose-RAT?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/commit-activity/w/0xrose/Rose-RAT?color=%23000000"> 
+    <img src="https://img.shields.io/github/last-commit/0xrose/Rose-RAT?color=%23000000&logoColor=%23000000">
     <br>
-    <img src="https://img.shields.io/github/issues/DamagingRose/Rose-RAT?color=%23000000&logoColor=%23000000">
-    <img src="https://img.shields.io/github/issues-closed/DamagingRose/Rose-RAT?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/issues/0xrose/Rose-RAT?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/issues-closed/0xrose/Rose-RAT?color=%23000000&logoColor=%23000000">
     <br>
 </div>
 
@@ -49,7 +49,7 @@ This can be hosted on [repl.it](https://replit.com/account) or any other server.
 
 # How is it working?
 
-When a grabber created with [Rose](https://github.com/DamagingRose/Rose-Grabber) (with the RAT enabled) is opened, it'll try to connect to a SocketIO Server.
+When a grabber created with [Rose](https://github.com/0xrose/Rose-Stealer_old) (with the RAT enabled) is opened, it'll try to connect to a SocketIO Server. # Note: This is outdated
 The server will create a `SID` for the victim's client (which is a temporary ID) that is going to be deleted once the victim's client is shutdown.
 The server will then send a WebHook that a victim has connected with his `IP` and his `SID` ([Preview](#preview))
 Then, it'll wait for the Server command and execute it in the background. 
@@ -91,7 +91,7 @@ Once a victim's client receives a command, it executes it and send a WebHook of 
 * Enter `pip install -r requirements.txt`
 * Click on the `Run` green button at the top of the page 
 * Copy the URL
-* Build a victim's client with [Rose-Grabber](https://github.com/DamagingRose/Rose-Grabber) using the URL you just copied
+* Build a victim's client with [Rose-Grabber](https://github.com/0xrose/Rose-Stealer_old) using the URL you just copied
 * Start `attacker_client.py` then paste the server URL
 * Whenever a victim starts the grabber, a WebHook will be sent to inform you,
 * You're now ready to execute commands.
@@ -114,13 +114,13 @@ All Notable Changes will be noted soon
 
 ## <a id="contributs"></a> 🥷 〢 Contributors 
 
-<a href="https://github.com/DamagingRose/Rose-RAT/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DamagingRose/Rose-RAT" />
+<a href="https://github.com/0xrose/Rose-RAT/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=0xrose/Rose-RAT" />
 </a>
 
 ## <a id="bugsorerrors"></a> ⚠️ Bugs Or Errors?
 
--   To Report An Error Make An **[Issue](https://github.com/DamagingRose/Rose-RAT/issues)**
+-   To Report An Error Make An **[Issue](https://github.com/0xrose/Rose-RAT/issues)**
 -   Or Join The **[Discord](https://discord.gg/Ts9RTFYvyt)**
 
 ## <a id="lisence"></a> License
