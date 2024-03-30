@@ -1,3 +1,5 @@
+### 🐍 PROJECT ENTIRELY DISCONTINUED NOW! NEW VERSION OF ROSE MALWARE: https://github.com/0xrose/Rose-Stealer
+
 <h1 align="center">
   <br>
   <a href="https://github.com/DamagingRose/Rose-Grabber"><img src="https://raw.githubusercontent.com/DamagingRose/Rose-Grabber/main/components/readme/%24rose-br.png" width=400 weigth=500 alt="R"></a>
